@@ -1,68 +1,77 @@
 #include <stdio.h>
-#include <stdlib.h> //random, srand ÇÔ¼ö
-#include <time.h> //time ÇÔ¼ö
+#include <stdlib.h> //random, srand í•¨ìˆ˜
+#include <time.h> //time í•¨ìˆ˜
 
-//»ç¶÷ VS ÄÄÇ»ÅÍ ºñ±³ ÇÔ¼ö
-//°ÔÀÓ¸Ó´Ï °è»ê
-int comVShu(int hu, int com, int baeting, int hu_money, int com_money) {
 
-	if (hu == com) {
-		printf("ºñ°å½À´Ï´Ù.\n");
-		printf("ÇöÀç ³²Àº °ÔÀÓ¸Ó´Ï´Â %d¿ø ÀÔ´Ï´Ù.\n", hu_money);
-	}
-
-	else if (com > (hu + 1) % 3) {
-		printf("ÀÌ°å½À´Ï´Ù.\n");
-		hu_money += baeting;
-		com_money -= baeting;
-		printf("ÇöÀç ³²Àº °ÔÀÓ¸Ó´Ï´Â %d¿ø ÀÔ´Ï´Ù.\n", hu_money);
-
-		if (com_money <= 0)
-			printf("@@@ÇÃ·¹ÀÌ¾î°¡ ½Â¸®Çß½À´Ï´Ù.@@@\n");
-	}
-
-	else {
-		printf("Á³½À´Ï´Ù.\n");
-		hu_money -= baeting;
-		com_money += baeting;
-		printf("ÇöÀç ³²Àº °ÔÀÓ¸Ó´Ï´Â %d¿ø ÀÔ´Ï´Ù.\n", hu_money);
-
-		if (hu_money <= 0)
-			printf("@@@ÇÃ·¹ÀÌ¾î°¡ ÆĞ¹èÇÏ¿´½À´Ï´Ù.@@@\n");
-	}
-
-	return hu_money, com_money;
-}
-
-int main() {
-	//°ÔÀÓ¸Ó´Ï ¼³Á¤
+int main()
+{
+	//ê²Œì„ë¨¸ë‹ˆ ì„¤ì •
 	int Game_money;
-	printf("°ÔÀÓ¸Ó´Ï¸¦ ¼³Á¤ÇÏ¼¼¿ä: ");
+	int hu;
+	int com;
+	int baeting;
+	int hu_money;
+	int com_money;
+
+	printf("ê²Œì„ë¨¸ë‹ˆë¥¼ ì„¤ì •í•˜ì„¸ìš”: ");
+
 	scanf("%d", &Game_money);
+
 	int Hu_game_money = Game_money;
+
 	int Com_game_money = Game_money;
 
-	while (Hu_game_money || Com_game_money >= 0) {
-		
+	while (Hu_game_money || Com_game_money >= 0)
+	{
+
 		int Baeting_money;
 		printf("---------------------------------------\n");
-		printf("±İ¾×À» ¹èÆÃÇÏ¼¼¿ä:");
+		printf("ê¸ˆì•¡ì„ ë°°íŒ…í•˜ì„¸ìš”:");
 		scanf("%d", &Baeting_money);
 
-		printf("°¡À§(1), ¹ÙÀ§(2), º¸(3)Áß ÇÏ³ª¸¦ ÀÔ·ÂÇÏ½Ã¿À:\n");
+		printf("ê°€ìœ„(1), ë°”ìœ„(2), ë³´(3)ì¤‘ í•˜ë‚˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤:\n");
 
-		//ÄÄÇ»ÅÍÀÇ °¡À§¹ÙÀ§º¸ ·£´ı Ãâ·Â
+		//ì»´í“¨í„°ì˜ ê°€ìœ„ë°”ìœ„ë³´ ëœë¤ ì¶œë ¥
 		srand(time(NULL));
 		int com_RPS = 0;
 		com_RPS = rand() % 3 + 1;
 
-		//»ç¶÷ °¡À§¹ÙÀ§º¸ ÀÔ·Â
+		//ì‚¬ëŒ ê°€ìœ„ë°”ìœ„ë³´ ì…ë ¥
 		int hu_RPS = 0;
 		scanf("%d", &hu_RPS);
 
-		//ÇÔ¼ö¸¦ ÀÌ¿ëÇÑ ´ë°á, °ÔÀÓ¸Ó´Ï °è»ê
+		if (hu_RPS == com_RPS)
+		{
+			printf("ë¹„ê²¼ìŠµë‹ˆë‹¤.\n");
+			printf("í˜„ì¬ ë‚¨ì€ ê²Œì„ë¨¸ë‹ˆëŠ” %dì› ì…ë‹ˆë‹¤.\n", Hu_game_money);
+		}
+		else if (com_RPS > (hu_RPS + 1) % 3)
+		{
+			printf("ì´ê²¼ìŠµë‹ˆë‹¤.\n");
+			Hu_game_money += Baeting_money;
+			Com_game_money -= Baeting_money;
+			printf("í˜„ì¬ ë‚¨ì€ ê²Œì„ë¨¸ë‹ˆëŠ” %dì› ì…ë‹ˆë‹¤.\n", Hu_game_money);
+
+			if (Com_game_money <= 0)
+				printf("@@@í”Œë ˆì´ì–´ê°€ ìŠ¹ë¦¬í–ˆìŠµë‹ˆë‹¤.@@@\n");
+
+		}
+
+		else
+		{
+			printf("ì¡ŒìŠµë‹ˆë‹¤.\n");
+			Hu_game_money -= Baeting_money;
+			Com_game_money += Baeting_money;
+			printf("í˜„ì¬ ë‚¨ì€ ê²Œì„ë¨¸ë‹ˆëŠ” %dì› ì…ë‹ˆë‹¤.\n", Hu_game_money);
+
+			if (Hu_game_money <= 0)
+				printf("@@@í”Œë ˆì´ì–´ê°€ íŒ¨ë°°í•˜ì˜€ìŠµë‹ˆë‹¤.@@@\n");
+		}
+		//í•¨ìˆ˜ë¥¼ ì´ìš©í•œ ëŒ€ê²°, ê²Œì„ë¨¸ë‹ˆ ê³„ì‚°
 		int result;
-		result = comVShu(hu_RPS, com_RPS, Baeting_money, Hu_game_money, Com_game_money);
+		//result = comVShu(hu_RPS, com_RPS, Baeting_money, Hu_game_money, Com_game_money);
 	}
+
+
 	return 0;
 }
