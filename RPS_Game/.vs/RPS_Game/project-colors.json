@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "7926f7bf-b0d0-4396-8933-19f046ad46cb": {
+      "ProjectGuid": "7926f7bf-b0d0-4396-8933-19f046ad46cb",
+      "DisplayName": "RPS_Game",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
