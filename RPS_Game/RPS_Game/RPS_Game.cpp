@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h> //random, srand 함수
 #include <time.h> //time 함수
+#include <windows.h>
 
 //기록 보관 동적 변수 선언
 int turn = 0;
@@ -11,6 +12,7 @@ int* com_RPS_record = (int*)malloc(sizeof(int) * record_size);
 int _comVShu(int hu, int com) {
 
 	if (hu == com) {
+		system("cls");
 		printf("컴퓨터 : %d \n", com);
 		printf("--------------------------------------\n");
 		printf("비겼습니다.\n");
@@ -19,6 +21,7 @@ int _comVShu(int hu, int com) {
 	}
 
 	else if ((hu == 1 && com == 2) || (hu == 2 && com == 3) || (hu == 3 && com == 1)) {
+		system("cls");
 		printf("컴퓨터 : %d \n", com);
 		printf("--------------------------------------\n");
 		printf("졌습니다.\n");
@@ -27,6 +30,7 @@ int _comVShu(int hu, int com) {
 	}
 
 	else {
+		system("cls");
 		printf("컴퓨터 : %d \n", com);
 		printf("--------------------------------------\n");
 		printf("이겼습니다.\n");
@@ -101,6 +105,7 @@ int main() {
 		printf("금액을 배팅하세요:");
 		scanf("%d", &Baeting_money);
 
+		system("cls");
 		printf("가위(1), 바위(2), 보(3)중 하나를 입력하시오:\n");
 
 		//컴퓨터의 가위바위보 랜덤 출력
