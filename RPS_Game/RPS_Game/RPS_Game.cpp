@@ -147,6 +147,6 @@ int main() {
 
 	}
 
-	free(com_RPS_record);
 	return 0;
 }
+free(com_RPS_record);
