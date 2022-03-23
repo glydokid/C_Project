@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include<windows.h>
 #include"fire_monster.h"
+#include"water_monster.h"
+#include"grass_monster.h"
+
 int _start() {
 
 	printf("게임을 시작합니다. 아무키나 눌러주세요.\n");
@@ -15,10 +18,6 @@ int _start() {
 
 	int pokemon_select;
 	scanf("%d", &pokemon_select);
-
-	if (pokemon_select == 1) {
-		_fire_monster_select();
-	}
 	
-	return 0;
+	return pokemon_select;
 }

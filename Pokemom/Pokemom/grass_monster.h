@@ -1,27 +1,27 @@
 #include <stdio.h>
 #include<windows.h>
 
-int _fire_monster_select() {
-	printf("파이리를 선택하셨습니다.\n");
+int _grass_monster_select() {
+	printf("이상해 씨를 선택하셨습니다.\n");
 
 	return 0;
 }
 
-int _fire_monster_HP() {
+int _grass_monster_HP() {
 	int HP = 500;
 
 	return HP;
 }
 
-int _fire_monster_attack() {
+int _grass_monster_attack() {
 	int stack = 0;
 	system("cls");
 	while (1) {
-		printf("------현재 스택: %d ------: %d\n",stack);
+		printf("------현재 스택: %d 1------: %d\n", stack);
 		printf("\n");
 		printf("공격을 선택하세요\n");
-		printf("1. 불공격(필살기 공격력 170/ 2스택 필요)\n");
-		printf("2. 할퀴기(공경력 100)\n");
+		printf("1. 풀잎 날리기 공격(필살기 공격력 170/ 2스택 필요)\n");
+		printf("2. 몸통박치기(공경력 100)\n");
 		printf("3. 막기(피해 무력화)\n");
 
 		int skill = 0;
@@ -29,7 +29,7 @@ int _fire_monster_attack() {
 
 		if (skill == 1 && stack == 2) {
 			system("cls");
-			printf("불공격(필살기)을 사용합니다.\n");
+			printf("풀잎 날리기 공격(필살기)을 사용합니다.\n");
 			printf("상대에게 170의 피해를 입혔습니다.");
 			stack++;
 			break;
@@ -40,7 +40,7 @@ int _fire_monster_attack() {
 		}
 		else if (skill == 2) {
 			system("cls");
-			printf("할퀴기 공격을 사용합니다.\n");
+			printf("몸통박치기 공격을 사용합니다.\n");
 			printf("상대에게 100의 피해를 입혔습니다.\n");
 			stack++;
 			break;
@@ -60,3 +60,5 @@ int _fire_monster_attack() {
 
 	return 0;
 }
+
+

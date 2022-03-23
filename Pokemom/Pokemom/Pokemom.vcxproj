@@ -145,6 +145,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="fire_monster.h" />
+    <ClInclude Include="grass_monster.h" />
+    <ClInclude Include="water_monster.h" />
     <ClInclude Include="_start.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
