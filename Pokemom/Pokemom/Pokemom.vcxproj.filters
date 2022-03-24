@@ -32,5 +32,8 @@
     <ClInclude Include="grass_monster.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="enemy_monster.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

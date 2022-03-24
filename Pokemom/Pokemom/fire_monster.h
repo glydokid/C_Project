@@ -2,7 +2,9 @@
 #include<windows.h>
 
 int _fire_monster_select() {
+	system("cls");
 	printf("파이리를 선택하셨습니다.\n");
+	printf("\n");
 
 	return 0;
 }
@@ -15,14 +17,15 @@ int _fire_monster_HP() {
 
 int _fire_monster_attack() {
 	int stack = 0;
-	system("cls");
+	int attack = 0;
 	while (1) {
-		printf("------현재 스택: %d ------: %d\n",stack);
+		printf("------현재 스택: %d ------\n",stack);
 		printf("\n");
 		printf("공격을 선택하세요\n");
 		printf("1. 불공격(필살기 공격력 170/ 2스택 필요)\n");
 		printf("2. 할퀴기(공경력 100)\n");
 		printf("3. 막기(피해 무력화)\n");
+		printf("4. 몬스터볼 (포획 성공시 승리)");
 
 		int skill = 0;
 		scanf("%d", &skill);
@@ -31,6 +34,7 @@ int _fire_monster_attack() {
 			system("cls");
 			printf("불공격(필살기)을 사용합니다.\n");
 			printf("상대에게 170의 피해를 입혔습니다.");
+			attack = 170;
 			stack++;
 			break;
 		}
@@ -43,14 +47,19 @@ int _fire_monster_attack() {
 			printf("할퀴기 공격을 사용합니다.\n");
 			printf("상대에게 100의 피해를 입혔습니다.\n");
 			stack++;
+			attack = 100;
 			break;
 		}
 		else if (skill == 3) {
 			system("cls");
 			printf("막기를 사용합니다.\n");
-			printf("상대의 공격을 무력화 합니다.");
+			printf("상대의 공격을 무력화 합니다.\n");
 			stack++;
 			break;
+		}
+		else if (skill == 4) {
+			system("cls");
+			printf("포켓볼을 사용합니다.\n");
 		}
 		else {
 			system("cls");

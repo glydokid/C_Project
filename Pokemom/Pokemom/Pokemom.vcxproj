@@ -144,6 +144,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="enemy_monster.h" />
     <ClInclude Include="fire_monster.h" />
     <ClInclude Include="grass_monster.h" />
     <ClInclude Include="water_monster.h" />
