@@ -36,7 +36,6 @@ int _enemy_monster2_attack() {
 	return attack;
 }
 
-
 int _enemy_monster3() {
 	int HP = 350;
 
