@@ -19,7 +19,6 @@ int _fire_monster_attack() {
 	int stack = 0;
 	int attack = 0;
 	while (1) {
-		printf("------현재 스택: %d ------\n",stack);
 		printf("\n");
 		printf("공격을 선택하세요\n");
 		printf("1. 불공격(필살기 공격력 170/ 2스택 필요)\n");
@@ -33,7 +32,6 @@ int _fire_monster_attack() {
 		if (skill == 1 && stack == 2) {
 			system("cls");
 			printf("불공격(필살기)을 사용합니다.\n");
-			printf("상대에게 170의 피해를 입혔습니다.");
 			attack = 170;
 			stack++;
 			break;
@@ -45,7 +43,6 @@ int _fire_monster_attack() {
 		else if (skill == 2) {
 			system("cls");
 			printf("할퀴기 공격을 사용합니다.\n");
-			printf("상대에게 100의 피해를 입혔습니다.\n");
 			stack++;
 			attack = 100;
 			break;
@@ -67,5 +64,5 @@ int _fire_monster_attack() {
 		}
 	}
 
-	return 0;
+	return attack;
 }
