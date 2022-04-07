@@ -14,7 +14,7 @@ int _VS() {
 			enemy_HP = _enemy_monster1();
 
 			while (monster_HP >= 0 && enemy_HP >= 0) {
-				printf("!!!!!!!현재는 1단계입니다!!!!!!!");
+				printf("!!!!!!!현재는 1단계입니다!!!!!!!\n");
 				printf("상대방의 체력은 %d입니다.\n", enemy_HP);
 
 				int monster_attack = _monster_attack();
@@ -41,9 +41,13 @@ int _VS() {
 
 				if (monster_HP <= 0) {
 					printf("플레이어는 패배하였습니다.\n");
+					break;
 				}
 				else if (enemy_HP <= 0) {
 					printf("플레이가 승리하였습니다.\n");
+					system("pause");
+					system("cls");
+					printf("다음 단계로 넘어갑니다.\n");
 				}
 			}
 
@@ -52,7 +56,7 @@ int _VS() {
 			enemy_HP = _enemy_monster2();
 
 			while (monster_HP >= 0 && enemy_HP >= 0) {
-				printf("!!!!!!!현재는 2단계입니다!!!!!!!");
+				printf("!!!!!!!현재는 2단계입니다!!!!!!!\n");
 				printf("상대방의 체력은 %d입니다.\n", enemy_HP);
 
 				int monster_attack = _monster_attack();
@@ -79,9 +83,13 @@ int _VS() {
 
 				if (monster_HP <= 0) {
 					printf("플레이어는 패배하였습니다.\n");
+					break;
 				}
 				else if (enemy_HP <= 0) {
 					printf("플레이가 승리하였습니다.\n");
+					system("pause");
+					system("cls");
+					printf("다음 단계로 넘어갑니다.\n");
 				}
 			}
 
@@ -90,7 +98,7 @@ int _VS() {
 			enemy_HP = _enemy_monster3();
 
 			while (monster_HP >= 0 && enemy_HP >= 0) {
-				printf("!!!!!!!현재는 3단계입니다!!!!!!!");
+				printf("!!!!!!!현재는 3단계입니다!!!!!!!\n");
 				printf("상대방의 체력은 %d입니다.\n", enemy_HP);
 
 				int monster_attack = _monster_attack();
@@ -117,9 +125,13 @@ int _VS() {
 
 				if (monster_HP <= 0) {
 					printf("플레이어는 패배하였습니다.\n");
+					break;
 				}
 				else if (enemy_HP <= 0) {
 					printf("플레이가 승리하였습니다.\n");
+					system("pause");
+					system("cls");
+					printf("다음 단계로 넘어갑니다.\n");
 				}
 			}
 
@@ -128,7 +140,7 @@ int _VS() {
 			enemy_HP = _enemy_monster4();
 
 			while (monster_HP >= 0 && enemy_HP >= 0) {
-				printf("!!!!!!!현재는 4단계입니다!!!!!!!");
+				printf("!!!!!!!현재는 4단계입니다!!!!!!!\n");
 				printf("상대방의 체력은 %d입니다.\n", enemy_HP);
 
 				int monster_attack = _monster_attack();
@@ -155,9 +167,13 @@ int _VS() {
 
 				if (monster_HP <= 0) {
 					printf("플레이어는 패배하였습니다.\n");
+					break;
 				}
 				else if (enemy_HP <= 0) {
 					printf("플레이가 승리하였습니다.\n");
+					system("pause");
+					system("cls");
+					printf("다음 단계로 넘어갑니다.\n");
 				}
 			}
 
@@ -166,7 +182,7 @@ int _VS() {
 			enemy_HP = _enemy_monster5();
 
 			while (monster_HP >= 0 && enemy_HP >= 0) {
-				printf("!!!!!!!현재는 5단계입니다!!!!!!!");
+				printf("!!!!!!!현재는 5단계입니다!!!!!!!\n");
 				printf("상대방의 체력은 %d입니다.\n", enemy_HP);
 
 				int monster_attack = _monster_attack();
@@ -193,9 +209,13 @@ int _VS() {
 
 				if (monster_HP <= 0) {
 					printf("플레이어는 패배하였습니다.\n");
+					break;
 				}
 				else if (enemy_HP <= 0) {
 					printf("플레이가 승리하였습니다.\n");
+					system("pause");
+					system("cls");
+					printf("다음 단계로 넘어갑니다.\n");
 				}
 			}
 			break;

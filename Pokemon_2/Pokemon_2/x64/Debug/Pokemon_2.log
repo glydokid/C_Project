@@ -1,7 +1,7 @@
 ﻿  main.cpp
 C:\Users\KimSeongHoon\C_Study\Pokemon_2\Pokemon_2\monster.h(22,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\KimSeongHoon\C_Study\Pokemon_2\Pokemon_2\enemy_monster.h(25,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\KimSeongHoon\C_Study\Pokemon_2\Pokemon_2\enemy_monster.h(51,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\KimSeongHoon\C_Study\Pokemon_2\Pokemon_2\enemy_monster.h(82,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\KimSeongHoon\C_Study\Pokemon_2\Pokemon_2\enemy_monster.h(117,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KimSeongHoon\C_Study\Pokemon_2\Pokemon_2\enemy_monster.h(24,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KimSeongHoon\C_Study\Pokemon_2\Pokemon_2\enemy_monster.h(50,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KimSeongHoon\C_Study\Pokemon_2\Pokemon_2\enemy_monster.h(81,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KimSeongHoon\C_Study\Pokemon_2\Pokemon_2\enemy_monster.h(116,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   Pokemon_2.vcxproj -> C:\Users\KimSeongHoon\C_Study\Pokemon_2\x64\Debug\Pokemon_2.exe
