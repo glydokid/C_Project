@@ -16,7 +16,7 @@ int _monster_attack() {
 		printf("1. 불공격(필살기 공격력 170/ 2스택 필요)\n");
 		printf("2. 할퀴기(공경력 100)\n");
 		printf("3. 막기(피해 무력화)\n");
-		printf("4. 몬스터볼 (포획 성공시 승리)");
+		printf("4. 몬스터볼 (포획 성공시 승리)\n");
 
 		int skill = 0;
 		scanf("%d", &skill);
