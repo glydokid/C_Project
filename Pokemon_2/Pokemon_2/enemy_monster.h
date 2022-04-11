@@ -32,7 +32,7 @@ int _enemy_monster2_attack() {
 		break;
 
 	case 2:
-		printf("적 몬스터가 몸통박치기를 사용했습니다.\n");
+		printf("적 몬스터가 할퀴기를 사용했습니다.\n");
 		attack = 70;
 		break;
 
@@ -59,7 +59,7 @@ int _enemy_monster3_attack() {
 		attack = 70;
 
 	case 2:
-		printf("적 몬스터가 몸통박치기를 사용했습니다.\n");
+		printf("적 몬스터가 할퀴기를 사용했습니다.\n");
 		attack = 70;
 		break;
 
@@ -92,7 +92,7 @@ int _enemy_monster4_attack() {
 		break;
 
 	case 2:
-		printf("적 몬스터가 몸통박치기를 사용했습니다.\n");
+		printf("적 몬스터가 할퀴기를 사용했습니다.\n");
 		attack = 70;
 		break;
 
@@ -132,7 +132,7 @@ int _enemy_monster5_attack() {
 		break;
 
 	case 2:
-		printf("적 몬스터가 몸통박치기를 사용했습니다.\n");
+		printf("적 몬스터가 할퀴기를 사용했습니다.\n");
 		attack = 70;
 		break;
 

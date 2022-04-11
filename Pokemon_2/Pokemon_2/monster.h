@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include<windows.h>
 
+int pokeball = 2;
+
 int _monster_HP() {
 	int HP = 500;
 
@@ -49,6 +51,26 @@ int _monster_attack() {
 		else if (skill == 4) {
 			system("cls");
 			printf("포켓볼을 사용합니다.\n");
+			int pokeball_per = rand() % 100;
+
+			if (pokeball_per >= 70) {
+				printf("포획에 실패하였습니다.\n");
+				printf("포켓볼 -1\n");
+				system("cls");
+				pokeball -= 1;
+
+				printf("남은 포켓볼은 %d개입니다.", pokeball);
+			}
+			else if (pokeball_per <= 69) {
+				printf("포획에 성공하였습니다.\n");
+				printf("포켓볼 -1\n");
+				system("cls");
+				pokeball -= 1;
+				 
+
+				printf("남은 포켓볼은 %d개입니다.", pokeball);
+			}
+			break;
 		}
 		else {
 			system("cls");

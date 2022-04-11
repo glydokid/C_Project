@@ -48,7 +48,7 @@ int _VS() {
 					printf("플레이가 승리하였습니다.\n");
 					system("pause");
 					system("cls");
-					printf("다음 단계로 넘어갑니다.\n");
+					printf("다음 단계로 넘어갑니다.\n\n");
 				}
 			}
 			break;
@@ -91,7 +91,7 @@ int _VS() {
 					printf("플레이가 승리하였습니다.\n");
 					system("pause");
 					system("cls");
-					printf("다음 단계로 넘어갑니다.\n");
+					printf("다음 단계로 넘어갑니다.\n\n");
 				}
 			}
 			break;
@@ -134,7 +134,7 @@ int _VS() {
 					printf("플레이가 승리하였습니다.\n");
 					system("pause");
 					system("cls");
-					printf("다음 단계로 넘어갑니다.\n");
+					printf("다음 단계로 넘어갑니다.\n\n");
 				}
 			}
 			break;
@@ -177,7 +177,7 @@ int _VS() {
 					printf("플레이가 승리하였습니다.\n");
 					system("pause");
 					system("cls");
-					printf("다음 단계로 넘어갑니다.\n");
+					printf("다음 단계로 넘어갑니다.\n\n");
 				}
 			}
 			break;
