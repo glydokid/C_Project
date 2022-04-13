@@ -16,7 +16,7 @@ int main()
 		int enemy_HP = enemy._enemyMonster_HP(i);
 		int my_HP = my.myMonster_HP();
 
-		my.ball_round();
+ 		my.ball_round();
 
 		while (1) {
 			int my_attack = my.myMonster_Attack();
@@ -44,7 +44,7 @@ int main()
 			printf("적의 남은 체력: %d\n\n", enemy_HP);
 
 			system("pause");
-			system("cls");
+			system("cls");                   
 
 			if (enemy_HP <= 0) {
 				printf("플레이어가 승리하였습니다\n");
@@ -73,6 +73,5 @@ int main()
 		}
 		
 	}
-
 	return 0;
 }

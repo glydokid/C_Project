@@ -1,14 +1,14 @@
 #include<Windows.h>
 #include"enemyMonster.h"
 
-
+//round 초기화 해결해 함
 class myMonster
 {
 	int HP = 500;
 	int attack;
 	int stack = 0;
 	int pokeball = 2;
-	int round = 0;
+	int round;
 
 public:
 	int myMonster_HP() {
@@ -18,17 +18,19 @@ public:
 	}
 
 	int ball_round() {
-		round++;
+		enemyMonster enemy;
+		int enemy_HP = enemy._enemyMonster_HP(round);
 
-		return round;
+		return enemy_HP;
+
+		round++;
 	}
 
 	int myMonster_Attack() {
-		enemyMonster enemy;
+		int enemy_HP = ball_round();
 
-		int enemy_HP = enemy._enemyMonster_HP(ball_round());
 		int ball_HP = enemy_HP - (enemy_HP * 80 / 100);
-
+		
 		attack = 0;
 		while (1) {
 			printf("공격을 선택하세요\n");
