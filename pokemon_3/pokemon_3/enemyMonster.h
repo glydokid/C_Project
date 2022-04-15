@@ -4,10 +4,10 @@
 
 class enemyMonster
 {
+public:
 	int HP;
 	int attack;
-	
-public:
+
 	int _enemyMonster_HP(int round) 
 	{
 		switch (round)

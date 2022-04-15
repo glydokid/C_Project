@@ -71,7 +71,7 @@ int main()
 			printf("게임을 종료합니다.\n");
 			break;
 		}
-		
+	
 	}
 	return 0;
 }
