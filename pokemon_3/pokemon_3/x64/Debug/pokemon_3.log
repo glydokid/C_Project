@@ -2,5 +2,5 @@
 C:\Users\KimSeongHoon\C_Study\pokemon_3\pokemon_3\myMonster.h(43,4): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 C:\Users\KimSeongHoon\C_Study\pokemon_3\pokemon_3\enemyMonster.h(41): warning C4715: 'enemyMonster::_enemyMonster_HP': 모든 제어 경로에서 값을 반환하지는 않습니다.
 C:\Users\KimSeongHoon\C_Study\pokemon_3\pokemon_3\enemyMonster.h(163): warning C4715: 'enemyMonster::_enemyMonster_Attack': 모든 제어 경로에서 값을 반환하지는 않습니다.
-C:\Users\KimSeongHoon\C_Study\pokemon_3\pokemon_3\myMonster.h(118): warning C4715: 'myMonster::myMonster_Attack': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\KimSeongHoon\C_Study\pokemon_3\pokemon_3\myMonster.h(117): warning C4715: 'myMonster::myMonster_Attack': 모든 제어 경로에서 값을 반환하지는 않습니다.
   pokemon_3.vcxproj -> C:\Users\KimSeongHoon\C_Study\pokemon_3\x64\Debug\pokemon_3.exe
